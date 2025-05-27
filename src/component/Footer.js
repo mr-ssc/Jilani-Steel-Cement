@@ -1,6 +1,6 @@
 import React from 'react';
 import './Footer.css';
-// import logo from "../component/Img/logo.png";
+import logo from "../component/Img/logo.png";
 // import taxihover from './taxihover.jpg'
 
 export default function Footer() {
@@ -11,9 +11,9 @@ export default function Footer() {
        
         <div className="footer-branding">
             <div className="logo-contain">
-        {/* <img src={logo} alt="Logo" /> */}
+        <img src={logo} alt="Logo" />
             {/* <img src={taxihover} alt="logo" /> */}
-          <h3>Company Name</h3>
+          <h3>JILANI Steel & Cement</h3>
           <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima in debitis sequi vel amet dolorum eligendi laborum iste veritatis? Consequuntur.
           </p>
         </div>
