@@ -1,0 +1,171 @@
+.navbar {
+  background-color: #111111;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  position: relative;
+  z-index: 1100;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-logo img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(255, 78, 29, 0.5);
+}
+
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.navbar-brand strong {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff4e1d;
+  letter-spacing: 1px;
+}
+
+.navbar-brand span {
+  font-size: 14px;
+  color: #cccccc;
+  font-weight: 400;
+}
+
+.navbar-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-links li {
+  position: relative;
+}
+
+.navbar-links a {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 14px;
+  color: #ff4e1d;
+  text-decoration: none;
+  font-weight: 500;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.navbar-links a svg {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+.navbar-links a:hover {
+  background-color: rgba(255, 78, 29, 0.1);
+  border-color: #ff4e1d;
+  color: #ffffff;
+}
+
+.navbar-links a.active {
+  background-color: #ff4e1d;
+  color: #fff;
+}
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* Close button inside menu */
+.close-btn {
+  display: none;
+  position: absolute;
+  top: 20px;
+  right: 15px;
+  background: none;
+  color: #ff4e1d;
+  font-size: 28px;
+  border: none;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+@media screen and (max-width: 868px) {
+  .hamburger {
+    display: block;
+  }
+
+  .navbar-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 40%;
+    height: 100vh;
+    background-color: #111111;
+    flex-direction: column;
+    padding: 70px 20px 20px;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.5);
+    transition: right 0.4s ease-in-out;
+    z-index: 1001;
+  }
+
+  .navbar-links.open {
+    right: 0;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .navbar-links li {
+    text-align: left;
+  }
+
+  .navbar-links a {
+    padding: 10px;
+    display: block;
+    color: #ff4e1d;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+  }
+
+  .navbar-links a:hover {
+    background-color: rgba(255, 78, 29, 0.1);
+    color: #fff;
+  }
+
+  /* Show close button inside menu */
+  .close-btn {
+    display: block;
+  }
+
+  /* Overlay Blur */
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+  }
+}
