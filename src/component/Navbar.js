@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./Navbar.css";
 import { GiHamburgerMenu } from "react-icons/gi";
+import {IoMdCall} from "react-icons/io"
 import logo from "./Img/logo.png";
 import {
   FaBox,
@@ -47,8 +48,8 @@ const Navbar = () => {
     { name: "Home", path: "/", icon: <FaHome /> },
     { name: "About", path: "/About", icon: <FaInfoCircle /> },
     { name: "Products", path: "/Products", icon: <FaBox /> },
-    { name: "Gallery", path: "/Gallery", icon: <FaImage /> },
-    { name: "Contact", path: "/Contact", icon: <FaPhone /> },
+    // { name: "Gallery", path: "/Gallery", icon: <FaImage /> },
+    { name: "Contact", path: "/Contact", icon: <IoMdCall /> },
   ];
 
   return (
