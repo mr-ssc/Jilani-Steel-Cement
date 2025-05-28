@@ -1,101 +1,193 @@
-.Partnerships-container {
-  padding: 2rem;
-  max-width: 1400px;
-  margin: 0 auto;
+/* Base Styles */
+.partnerships-container {
+  background-color: #111111;
+  color: #ffffff;
+  padding: 4rem 2rem;
   font-family: 'Arial', sans-serif;
 }
 
-.Partnerships-title {
-  text-align: center;
-  margin-bottom: 2.5rem;
-  color: #2c3e50;
+.partnerships-title {
   font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.partnerships-title span {
+  color: #ff4e1d;
+}
+
+.partnerships-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 3rem;
+  color: #aaaaaa;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.partnerships-section {
+  margin-bottom: 4rem;
+}
+
+.partnerships-category-title {
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #ff4e1d;
+  display: inline-block;
+}
+
+.partnerships-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.partnerships-card {
+  background: linear-gradient(145deg, #1e1e1e, #2a2a2a);
+  border-radius: 10px;
+  padding: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border-left: 4px solid transparent;
+}
+
+.partnerships-steel {
+  border-left-color: #ff4e1d;
+}
+
+.partnerships-cement {
+  border-left-color: #4e9af1;
+}
+
+.partnerships-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.partnerships-card:hover .visit-website-btn {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.card-content {
+  flex: 1;
+}
+
+.card-title {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
   font-weight: 600;
 }
 
-.Partnerships-section {
-  margin-bottom: 3rem;
-}
-
-.Partnerships-category-title {
-  color: #34495e;
-  font-size: 1.8rem;
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid #ecf0f1;
-}
-
-.Partnerships-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 1.5rem;
-}
-
-.Partnerships-card {
-  padding: 1.5rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative;
-  overflow: hidden;
-}
-
-.Partnerships-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-}
-
-.Partnerships-steel {
-  background-color: #f5f7fa;
-  border-left: 4px solid #3498db;
-}
-
-.Partnerships-cement {
-  background-color: #f9f9f9;
-  border-left: 4px solid #e74c3c;
-}
-
-.Partnerships-card-title {
-  color: #2c3e50;
-  font-size: 1.4rem;
-  margin-bottom: 0.8rem;
-}
-
-.Partnerships-card-description {
-  color: #7f8c8d;
+.card-description {
+  color: #bbbbbb;
+  font-size: 0.95rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
 }
 
-.Partnerships-card-badge {
+.card-badge {
   position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background-color: #ecf0f1;
+  top: 1.5rem;
+  right: 1.5rem;
+  background-color: #ff4e1d;
+  color: white;
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.8rem;
-  font-weight: bold;
+  font-weight: 600;
   text-transform: uppercase;
 }
 
-.Partnerships-steel .Partnerships-card-badge {
-  background-color: #d6eaf8;
-  color: #2980b9;
+.partnerships-cement .card-badge {
+  background-color: #4e9af1;
 }
 
-.Partnerships-cement .Partnerships-card-badge {
-  background-color: #fadbd8;
-  color: #c0392b;
+.visit-website-btn {
+  background-color: #ff4e1d;
+  color: white;
+  padding: 0.8rem;
+  text-align: center;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  opacity: 0;
+  transform: translateY(20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+.partnerships-cement .visit-website-btn {
+  background-color: #4e9af1;
+}
+
+.visit-website-btn span {
+  margin-left: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.partnerships-card:hover .visit-website-btn span {
+  transform: translateX(3px);
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-  .Partnerships-grid {
+  .partnerships-title {
+    font-size: 2rem;
+  }
+  
+  .partnerships-subtitle {
+    font-size: 1rem;
+  }
+  
+  .partnerships-grid {
     grid-template-columns: 1fr;
   }
   
-  .Partnerships-title {
-    font-size: 2rem;
+  .visit-website-btn {
+    opacity: 1;
+    transform: translateY(0);
   }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.partnerships-card {
+  animation: fadeIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+.partnerships-card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.partnerships-card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.partnerships-card:nth-child(3) {
+  animation-delay: 0.3s;
 }
