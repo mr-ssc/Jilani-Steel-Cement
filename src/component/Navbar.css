@@ -11,6 +11,9 @@
   z-index: 1100;
 }
 
+a{
+  text-decoration: none;
+}
 .navbar-logo {
   display: flex;
   align-items: center;

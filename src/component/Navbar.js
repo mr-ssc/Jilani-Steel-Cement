@@ -34,10 +34,15 @@ const Navbar = () => {
     <>
       <nav className="navbar" role="navigation" aria-label="Main Navigation">
         <div className="navbar-logo">
-          <img src={logo} alt="Jilani Logo" />
+          <a href="/">
+            <img src={logo} alt="Jilani Logo" />
+          </a>
           <div className="navbar-brand">
-            <strong>JILANI</strong>
-            <span>Steel & Cement</span>
+
+            <a href="/">
+              <strong>JILANI</strong>
+              <span>Steel & Cement</span>
+            </a>
           </div>
         </div>
 
@@ -127,7 +132,7 @@ const Navbar = () => {
             <GiHamburgerMenu size={26} color="#ff4e1d" />
           )}
         </button>
-      </nav>
+      </nav >
 
       {/* Overlay Blur */}
       {menuOpen && <div className="overlay" onClick={closeMenu}></div>}
