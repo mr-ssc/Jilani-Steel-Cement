@@ -1,0 +1,257 @@
+/* Products_Overview.css */
+.Po-container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #000;
+  color: #ffffff;
+  min-height: 100vh;
+}
+
+.Po-title {
+  color: #ff4e1d;
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  position: relative;
+  padding-bottom: 15px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+.Po-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #ff4e1d;
+  border-radius: 3px;
+}
+
+.Po-section {
+  margin-bottom: 50px;
+  background-color: rgba(30, 30, 30, 0.8);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 78, 29, 0.2);
+  animation: fadeIn 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.Po-section:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.Po-section:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.Po-subtitle {
+  color: #ff4e1d;
+  font-size: 1.8rem;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 78, 29, 0.5);
+  display: inline-block;
+}
+
+.Po-productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+}
+
+.Po-productCard {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(40, 40, 40, 0.8);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 78, 29, 0.1);
+  animation: zoomIn 0.5s ease-out forwards;
+  opacity: 0;
+  transform: scale(0.95);
+  margin-top: 10px;
+}
+
+.Po-productCard:nth-child(1) { animation-delay: 0.3s; }
+.Po-productCard:nth-child(2) { animation-delay: 0.4s; }
+.Po-productCard:nth-child(3) { animation-delay: 0.5s; }
+.Po-productCard:nth-child(4) { animation-delay: 0.6s; }
+
+.Po-productCard:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 24px rgba(255, 78, 29, 0.15);
+  border-color: rgba(255, 78, 29, 0.3);
+}
+
+.Po-productImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.Po-productCard:hover .Po-productImage {
+  transform: scale(1.05);
+}
+
+.Po-productDetails {
+  padding: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.Po-productName {
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.Po-productDesc {
+  color: #cccccc;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+.Po-productPrice {
+  color: #ff4e1d;
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.Po-productPrice::before {
+  content: '₹';
+  margin-right: 2px;
+  font-size: 1.1rem;
+}
+
+.Po-enquireBtn {
+  background-color: #ff4e1d;
+  color: #ffffff;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  box-shadow: 0 4px 8px rgba(255, 78, 29, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  align-self: flex-start;
+}
+
+.Po-enquireBtn:hover {
+  background-color: #e0451a;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 78, 29, 0.4);
+}
+
+.Po-enquireBtn:active {
+  transform: translateY(0);
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 992px) {
+  .Po-productsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .Po-container {
+    padding: 20px 15px;
+  }
+  
+  .Po-title {
+    font-size: 2rem;
+  }
+  
+  .Po-section {
+    padding: 20px;
+  }
+  
+  .Po-productsGrid {
+    grid-template-columns: 1fr;
+  }
+  
+  .Po-productCard {
+    max-width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .Po-title {
+    font-size: 1.8rem;
+    padding-bottom: 10px;
+  }
+  
+  .Po-title::after {
+    width: 80px;
+  }
+  
+  .Po-subtitle {
+    font-size: 1.5rem;
+  }
+  
+  .Po-productName {
+    font-size: 1.3rem;
+  }
+  
+  .Po-productPrice {
+    font-size: 1.2rem;
+  }
+  
+  .Po-enquireBtn {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}
