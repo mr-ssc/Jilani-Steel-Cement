@@ -5,6 +5,7 @@ import Navbar from './component/Navbar'
 import Footer from "./component/Footer"
 import Hero from './component/Hero'
 import Products_Overview from "./component/Products_Overview"
+import Partnerships from './component/Partnerships'
 
 
 
@@ -21,6 +22,7 @@ function App() {
         <Route path='/Navbar' element={<Navbar />}></Route>
         <Route path='/Hero' element={<Hero />}></Route>
         <Route path='/Products_Overview' element={<Products_Overview />}></Route>
+        <Route path='/Partnerships' element={<Partnerships/>}></Route>
 
 
         <Route path='/Footer' element={<Footer />}></Route>

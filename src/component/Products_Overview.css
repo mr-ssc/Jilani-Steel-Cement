@@ -1,12 +1,22 @@
 /* Products_Overview.css */
+
+.Po {
+  width: 100%;
+  background-color: #000;
+}
+
 .Po-container {
   max-width: 1250px;
   margin: 0 auto;
   padding: 30px 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #000;
   color: #ffffff;
   min-height: 100vh;
+  border-top: 2px solid #c0392b;
+  /* border-radius: 10px 18px ; */
+  padding-top: 10px;
+  background-color: #000;
+
 }
 
 .Po-title {
@@ -82,10 +92,21 @@
   margin-top: 10px;
 }
 
-.Po-productCard:nth-child(1) { animation-delay: 0.3s; }
-.Po-productCard:nth-child(2) { animation-delay: 0.4s; }
-.Po-productCard:nth-child(3) { animation-delay: 0.5s; }
-.Po-productCard:nth-child(4) { animation-delay: 0.6s; }
+.Po-productCard:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.Po-productCard:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.Po-productCard:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.Po-productCard:nth-child(4) {
+  animation-delay: 0.6s;
+}
 
 .Po-productCard:hover {
   transform: translateY(-8px) scale(1.02);
@@ -173,6 +194,7 @@
     opacity: 0;
     transform: translateY(-30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -183,6 +205,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -193,6 +216,7 @@
     opacity: 0;
     transform: scale(0.95);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -210,19 +234,19 @@
   .Po-container {
     padding: 20px 15px;
   }
-  
+
   .Po-title {
     font-size: 2rem;
   }
-  
+
   .Po-section {
     padding: 20px;
   }
-  
+
   .Po-productsGrid {
     grid-template-columns: 1fr;
   }
-  
+
   .Po-productCard {
     max-width: 100%;
   }
@@ -233,23 +257,23 @@
     font-size: 1.8rem;
     padding-bottom: 10px;
   }
-  
+
   .Po-title::after {
     width: 80px;
   }
-  
+
   .Po-subtitle {
     font-size: 1.5rem;
   }
-  
+
   .Po-productName {
     font-size: 1.3rem;
   }
-  
+
   .Po-productPrice {
     font-size: 1.2rem;
   }
-  
+
   .Po-enquireBtn {
     padding: 10px 20px;
     font-size: 0.9rem;

@@ -1,13 +1,14 @@
 import React from 'react';
 import './Products_Overview.css';
 // Import images (replace with your actual image paths)
-import tmtSteelImg from './Img/tmt-steel.jpeg';
-import steelChannelImg from './Img/steel-channel.jpeg';
-import opcCementImg from './Img/opc-cement.jpeg';
-import ppcCementImg from './Img/ppc-cement.jpeg';
+import tmtSteelImg from './Img/tmt-steel.png';
+import steelChannelImg from './Img/steel-channel.png';
+import opcCementImg from './Img/opc-cement.png';
+import ppcCementImg from './Img/ppc-cement.png';
 
 const ProductsOverview = () => {
   return (
+    <div className='Po'>
     <div className="Po-container">
       <h1 className="Po-title"> Jilani Steel and Cement Materials</h1>
       
@@ -60,6 +61,7 @@ const ProductsOverview = () => {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 };
