@@ -10,6 +10,7 @@ import About from './component/About'
 import Products from "./component/Products"
 import Gallery from './component/Gallery'
 import Contact from './component/Contact'
+import Highlights from './component/Highlights'
 
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path='/Products' element={<Products />}></Route>
         <Route path='/Gallery' element={<Gallery />}></Route>
         <Route path='/Contact' element={<Contact />}></Route>
+        <Route path='/Highlights' element={<Highlights />}></Route>
 
 
 

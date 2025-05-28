@@ -4,6 +4,7 @@ import Footer from './Footer'
 import Hero from './Hero'
 import Products_Overview from "./Products_Overview"
 import Partnerships from './Partnerships'
+import Highlights from './Highlights'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Hero />
       <Products_Overview />
       <Partnerships />
+      <Highlights />
       <Footer />
 
     </>
