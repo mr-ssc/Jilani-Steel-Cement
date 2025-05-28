@@ -29,8 +29,8 @@ export default function Footer() {
           <ul>
             <li><a href="/Home">Home</a></li>
             <li><a href="/About">About</a></li>
-            <li><a href="/Service">Service</a></li>
             <li><a href="/Product"></a>Product</li>
+            <li><a href="/Gallery">Gallery</a></li>
             <li><a href="/Contact">Contact</a></li>
 
           </ul>
@@ -39,10 +39,10 @@ export default function Footer() {
         <div className="footer-contact">
           <h4>Contact Support</h4>
           <p>
-            <a href="mailto:sales@easy2solutions.com">Email:  yourmail@mail.com </a>
+            <a href="mailto:sales@easy2solutions.com">Email:  Zakiattri777@gmail.com</a>
           </p>
           <p>
-            <a href="tel:+911234567890">Phone: +91 1234567890</a>
+            <a href="tel:+911234567890">Phone: +91 9601345304</a>
           </p>
         </div>
       </div>
