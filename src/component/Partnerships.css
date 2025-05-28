@@ -148,15 +148,15 @@
   .partnerships-title {
     font-size: 2rem;
   }
-  
+
   .partnerships-subtitle {
     font-size: 1rem;
   }
-  
+
   .partnerships-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .visit-website-btn {
     opacity: 1;
     transform: translateY(0);
@@ -169,6 +169,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
