@@ -18,6 +18,18 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);
 
+  // Set active link based on current path
+  useEffect(() => {
+    const path = window.location.pathname;
+    const linkName = 
+      path === '/' ? 'Home' :
+      path === '/About' ? 'About' :
+      path === '/Products' ? 'Products' :
+      path === '/Gallery' ? 'Gallery' :
+      path === '/Contact' ? 'Contact' : 'Home';
+    setActiveLink(linkName);
+  }, []);
+
   // Scroll lock when menu is open
   useEffect(() => {
     if (menuOpen) {
@@ -30,6 +42,15 @@ const Navbar = () => {
     };
   }, [menuOpen]);
 
+  // Navigation items data
+  const navItems = [
+    { name: "Home", path: "/", icon: <FaHome /> },
+    { name: "About", path: "/About", icon: <FaInfoCircle /> },
+    { name: "Products", path: "/Products", icon: <FaBox /> },
+    { name: "Gallery", path: "/Gallery", icon: <FaImage /> },
+    { name: "Contact", path: "/Contact", icon: <FaPhone /> },
+  ];
+
   return (
     <>
       <nav className="navbar" role="navigation" aria-label="Main Navigation">
@@ -38,7 +59,6 @@ const Navbar = () => {
             <img src={logo} alt="Jilani Logo" />
           </a>
           <div className="navbar-brand">
-
             <a href="/">
               <strong>JILANI</strong>
               <span>Steel & Cement</span>
@@ -55,66 +75,20 @@ const Navbar = () => {
             <FaTimes size={24} color="#fff" />
           </button>
           <ul>
-            <li>
-              <a
-                href="/"
-                className={activeLink === "Home" ? "active" : ""}
-                onClick={() => {
-                  setActiveLink("Home");
-                  closeMenu();
-                }}
-              >
-                <FaHome /> Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="/About"
-                className={activeLink === "About" ? "active" : ""}
-                onClick={() => {
-                  setActiveLink("About");
-                  closeMenu();
-                }}
-              >
-                <FaInfoCircle /> About
-              </a>
-            </li>
-            <li>
-              <a
-                href="/Products"
-                className={activeLink === "Products" ? "active" : ""}
-                onClick={() => {
-                  setActiveLink("Products");
-                  closeMenu();
-                }}
-              >
-                <FaBox /> Products
-              </a>
-            </li>
-            <li>
-              <a
-                href="/Gallery"
-                className={activeLink === "Gallery" ? "active" : ""}
-                onClick={() => {
-                  setActiveLink("Gallery");
-                  closeMenu();
-                }}
-              >
-                <FaImage /> Gallery
-              </a>
-            </li>
-            <li>
-              <a
-                href="/Contact"
-                className={activeLink === "Contact" ? "active" : ""}
-                onClick={() => {
-                  setActiveLink("Contact");
-                  closeMenu();
-                }}
-              >
-                <FaPhone /> Contact
-              </a>
-            </li>
+            {navItems.map((item) => (
+              <li key={item.name}>
+                <a
+                  href={item.path}
+                  className={activeLink === item.name ? "active" : ""}
+                  onClick={() => {
+                    setActiveLink(item.name);
+                    closeMenu();
+                  }}
+                >
+                  {item.icon} {item.name}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -132,7 +106,7 @@ const Navbar = () => {
             <GiHamburgerMenu size={26} color="#ff4e1d" />
           )}
         </button>
-      </nav >
+      </nav>
 
       {/* Overlay Blur */}
       {menuOpen && <div className="overlay" onClick={closeMenu}></div>}

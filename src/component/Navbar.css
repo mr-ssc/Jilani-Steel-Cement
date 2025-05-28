@@ -11,9 +11,10 @@
   z-index: 1100;
 }
 
-a{
+a {
   text-decoration: none;
 }
+
 .navbar-logo {
   display: flex;
   align-items: center;
@@ -84,7 +85,8 @@ a{
 
 .navbar-links a.active {
   background-color: #ff4e1d;
-  color: #fff;
+  color: #fff !important;
+  box-shadow: 0 2px 8px rgba(255, 78, 29, 0.5);
 }
 
 /* Hamburger button */
@@ -119,11 +121,12 @@ a{
     position: fixed;
     top: 0;
     right: -100%;
-    width: 40%;
+    width: 70%;
+    max-width: 300px;
     height: 100vh;
     background-color: #111111;
     flex-direction: column;
-    padding: 70px 20px 20px;
+    padding: 80px 20px 20px;
     box-shadow: -4px 0 12px rgba(0, 0, 0, 0.5);
     transition: right 0.4s ease-in-out;
     z-index: 1001;
@@ -135,7 +138,7 @@ a{
 
   .navbar-links ul {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
   }
 
   .navbar-links li {
@@ -143,16 +146,25 @@ a{
   }
 
   .navbar-links a {
-    padding: 10px;
-    display: block;
+    padding: 12px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
     color: #ff4e1d;
     border-radius: 6px;
     transition: all 0.3s ease;
+    margin: 5px 0;
   }
 
   .navbar-links a:hover {
     background-color: rgba(255, 78, 29, 0.1);
     color: #fff;
+  }
+
+  .navbar-links a.active {
+    background-color: #ff4e1d;
+    color: white !important;
+    border-left: 4px solid white;
   }
 
   /* Show close button inside menu */
