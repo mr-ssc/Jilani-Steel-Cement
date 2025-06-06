@@ -2,127 +2,55 @@ import React, { useState } from "react";
 import "./Products_Overview.css";
 import tmtSteelImg from "./Img/tmt-steel.png";
 import steelChannelImg from "./Img/steel-channel.png";
+import img1 from "./img1.jpg"
+import img2 from "./img2.jpg"
+import img3 from "./img3.jpg"
+import img4 from "./img4.jpg"
+import img5 from "./img5.jpg"
+import img6 from "./img6.jpg"
 
 const products = [
   {
-    name: "TMT Steel Bars",
-    description: "IS 1786 Certified, Grade 500D",
-    price: "₹52/kg",
-    image: tmtSteelImg,
+    id: 1,
+    name: "JSW Vishwas GC Sheets",
+    title: "STEEL",
+    image: img1,
+    description: "JSW Steel's tamper-proof, non-erasable marked colour coated sheets with superior durability and weather resistance.",
   },
   {
-    name: "Steel Channels",
-    description: "MS Channels, 150x75mm",
-    price: "₹72/kg",
-    image: steelChannelImg,
+    id: 2,
+    name: "Mild Steel Plates",
+    title: "STEEL",
+    image: img2,
+    description: "High-quality flat sheets for fabrication and construction applications, available in various thicknesses and sizes.",
   },
   {
-    name: "Steel Angles",
-    description: "MS Angles, 50x50x5mm",
-    price: "₹68/kg",
-    image: steelChannelImg,
+    id: 3,
+    name: "Mild Steel Round Bar",
+    title: "STEEL",
+    image: img3,
+    description: "Versatile ferrous metal bars with excellent magnetic properties, ductility, and weldability for multiple applications.",
   },
   {
-    name: "Steel Rods",
-    description: "Mild Steel Rods, 12mm",
-    price: "₹58/kg",
-    image: steelChannelImg,
+    id: 4,
+    name: "Mild Steel Flat Bar",
+    title: "STEEL",
+    image: img4,
+    description: "Precision-engineered rectangular bars ideal for fabrication, construction, and general engineering purposes.",
   },
   {
-    name: "Galvanized Sheets",
-    description: "0.8mm, Anti-Rust Coated",
-    price: "₹90/kg",
-    image: steelChannelImg,
+    id: 5,
+    name: "Carbon Steel Square Pipe",
+    title: "STEEL",
+    image: img5,
+    description: "Structural-grade hollow square pipes perfect for frames, supports, and various construction projects.",
   },
   {
-    name: "Binding Wire",
-    description: "Gauge 20, 1kg Roll",
-    price: "₹55/kg",
-    image: steelChannelImg,
-  },
-  {
-    name: "Steel Plates",
-    description: "MS Plates, 10mm",
-    price: "₹75/kg",
-    image: steelChannelImg,
-  },
-  {
-    name: "Steel Pipes",
-    description: "MS Round Pipes, 3 Inch",
-    price: "₹62/kg",
-    image: steelChannelImg,
-  },
-  {
-    name: "Square Tubes",
-    description: "MS Square Tubes, 100x100mm",
-    price: "₹70/kg",
-    image: steelChannelImg,
-  },
-  {
-    name: "Chequered Plates",
-    description: "MS Chequered, 5mm",
-    price: "₹80/kg",
-    image: steelChannelImg,
-  },
-  {
-    name: "Steel Beams",
-    description: "ISMB 200, 200x100mm",
-    price: "₹78/kg",
-    image: steelChannelImg,
-  },
-  {
-    name: "HR Sheets",
-    description: "Hot Rolled, 2mm",
-    price: "₹65/kg",
-    image: steelChannelImg,
-  },
-  {
-    name: "CR Sheets",
-    description: "Cold Rolled, 1.2mm",
-    price: "₹69/kg",
-    image: steelChannelImg,
-  },
-  {
-    name: "MS Flat Bars",
-    description: "25x5mm MS Flats",
-    price: "₹60/kg",
-    image: steelChannelImg,
-  },
-  {
-    name: "Steel Gratings",
-    description: "Industrial Gratings",
-    price: "₹95/kg",
-    image: steelChannelImg,
-  },
-  {
-    name: "GI Pipes",
-    description: "Galvanized Iron Pipe, 2 Inch",
-    price: "₹76/kg",
-    image: steelChannelImg,
-  },
-  {
-    name: "SS Pipes",
-    description: "Stainless Steel, 304 Grade",
-    price: "₹130/kg",
-    image: steelChannelImg,
-  },
-  {
-    name: "MS Rings",
-    description: "Fabricated MS Rings",
-    price: "₹68/kg",
-    image: steelChannelImg,
-  },
-  {
-    name: "MS Square Bars",
-    description: "20mm MS Squares",
-    price: "₹66/kg",
-    image: steelChannelImg,
-  },
-  {
-    name: "Wire Mesh",
-    description: "Chain Link, 12 Gauge",
-    price: "₹52/kg",
-    image: steelChannelImg,
+    id: 6,
+    name: "Carbon Steel Channels",
+    title: "STEEL",
+    image: img6,
+    description: "U-shaped structural beams (C-channels) offering superior strength for construction and industrial use.",
   },
 ];
 
@@ -151,8 +79,10 @@ const Products_Overview = () => {
                 <div className="Po-productDetails">
                   <h3 className="Po-productName">{product.name}</h3>
                   <p className="Po-productDesc">{product.description}</p>
-                  <p className="Po-productPrice">{product.price}</p>
-                  <button className="Po-enquireBtn">Enquire Now</button>
+                  {/* <p className="Po-productPrice">{product.price}</p> */}
+                  <a href="/Products">
+                    <button className="Po-enquireBtn">Enquire Now</button>
+                  </a>
                 </div>
               </div>
             ))}

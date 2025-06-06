@@ -156,6 +156,14 @@ const products = [
     image: img4,
     description: "Precision-engineered rectangular bars ideal for fabrication, construction, and general engineering purposes.",
   },
+  {
+    id: 21,
+    name: "Carbon Steel Square Pipe",
+    title: "STEEL",
+    image: img5,
+    description: "Structural-grade hollow square pipes perfect for frames, supports, and various construction projects.",
+  },
+
 ];
 
 function Products() {
