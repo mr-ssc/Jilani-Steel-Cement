@@ -10,7 +10,8 @@ import img5 from "./img5.jpg"
 import img6 from "./img6.jpg"
 import img7 from "./img7.jpg"
 import img8 from "./img8.jpg"
-// import img9 from "./img9.jpg"
+import img9 from "./img9.jpg"
+import img10 from "./img10.jpg"
 
 
 
@@ -71,98 +72,104 @@ const products = [
     image: img8,
     description: "Durable steel sheets with protective zinc coating and decorative finish for long-lasting roofing solutions.",
   },
-  // Duplicate images with matching info
+
+
   {
     id: 9,
+    name: "Cement roofing sheets",
+    title: "CEMENT",
+    image: img9,
+    description: "Strong and durable cement roofing sheets ideal for all-weather protection, offering reliable coverage for residential, commercial, and industrial buildings.",
+  },
+
+
+  {
+    id: 10,
+    name: "Color-Coated Roofing Sheets",
+    title: "STEEL",
+    image: img10,
+    description: "Durable steel sheets with protective zinc coating and decorative finish for long-lasting roofing solutions.",
+  },
+
+
+
+  {
+    id: 1,
     name: "JSW Vishwas GC Sheets",
     title: "STEEL",
     image: img1,
     description: "JSW Steel's tamper-proof, non-erasable marked colour coated sheets with superior durability and weather resistance.",
   },
   {
-    id: 10,
+    id: 2,
     name: "Mild Steel Plates",
     title: "STEEL",
     image: img2,
     description: "High-quality flat sheets for fabrication and construction applications, available in various thicknesses and sizes.",
   },
   {
-    id: 11,
+    id: 3,
     name: "Mild Steel Round Bar",
     title: "STEEL",
     image: img3,
     description: "Versatile ferrous metal bars with excellent magnetic properties, ductility, and weldability for multiple applications.",
   },
   {
-    id: 12,
+    id: 4,
     name: "Mild Steel Flat Bar",
     title: "STEEL",
     image: img4,
     description: "Precision-engineered rectangular bars ideal for fabrication, construction, and general engineering purposes.",
   },
   {
-    id: 13,
+    id: 5,
     name: "Carbon Steel Square Pipe",
     title: "STEEL",
     image: img5,
     description: "Structural-grade hollow square pipes perfect for frames, supports, and various construction projects.",
   },
   {
-    id: 14,
+    id: 6,
     name: "Carbon Steel Channels",
     title: "STEEL",
     image: img6,
     description: "U-shaped structural beams (C-channels) offering superior strength for construction and industrial use.",
   },
   {
-    id: 15,
+    id: 7,
     name: "MS Angle",
     title: "STEEL",
     image: img7,
     description: "L-shaped structural sections providing excellent bracing and support in construction and fabrication.",
   },
   {
-    id: 16,
+    id: 8,
     name: "Color-Coated Roofing Sheets",
     title: "STEEL",
     image: img8,
     description: "Durable steel sheets with protective zinc coating and decorative finish for long-lasting roofing solutions.",
   },
+
+
   {
-    id: 17,
-    name: "JSW Vishwas GC Sheets",
-    title: "STEEL",
-    image: img1,
-    description: "JSW Steel's tamper-proof, non-erasable marked colour coated sheets with superior durability and weather resistance.",
+    id: 9,
+    name: "Cement roofing sheets",
+    title: "CEMENT",
+    image: img9,
+    description: "Strong and durable cement roofing sheets ideal for all-weather protection, offering reliable coverage for residential, commercial, and industrial buildings.",
   },
+
+
   {
-    id: 18,
-    name: "Mild Steel Plates",
+    id: 10,
+    name: "Color-Coated Roofing Sheets",
     title: "STEEL",
-    image: img2,
-    description: "High-quality flat sheets for fabrication and construction applications, available in various thicknesses and sizes.",
+    image: img10,
+    description: "Durable steel sheets with protective zinc coating and decorative finish for long-lasting roofing solutions.",
   },
-  {
-    id: 19,
-    name: "Mild Steel Round Bar",
-    title: "STEEL",
-    image: img3,
-    description: "Versatile ferrous metal bars with excellent magnetic properties, ductility, and weldability for multiple applications.",
-  },
-  {
-    id: 20,
-    name: "Mild Steel Flat Bar",
-    title: "STEEL",
-    image: img4,
-    description: "Precision-engineered rectangular bars ideal for fabrication, construction, and general engineering purposes.",
-  },
-  {
-    id: 21,
-    name: "Carbon Steel Square Pipe",
-    title: "STEEL",
-    image: img5,
-    description: "Structural-grade hollow square pipes perfect for frames, supports, and various construction projects.",
-  },
+
+
+
 
 ];
 
