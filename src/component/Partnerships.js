@@ -76,7 +76,7 @@ const Partnerships = () => {
       </div>
 
       <div className="partnerships-section">
-        <h3 className="partnerships-category-title">Cement Products</h3>
+        <h3 className="partnerships-category-title-1">Cement Products</h3>
         <div className="partnerships-grid">
           {cementBrands.map((brand) => (
             <div
