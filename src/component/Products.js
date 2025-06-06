@@ -190,7 +190,7 @@ function Products() {
                 <h3 className="product-name">{product.name}</h3>
                 <p className="product-title">{product.title}</p>
                 <p className="product-description">{product.description}</p>
-                <button className="details-button">View Details</button>
+                {/* <button className="details-button">View Details</button> */}
               </div>
             </div>
           ))}
