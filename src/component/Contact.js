@@ -133,7 +133,7 @@ export default function Contact() {
                             </p>
                             <p className="CONTACT-info-item">
                                 <FaMailBulk className="CONTACT-white-icon" />
-                                <a href="mailto:zakiattri777@gmail.com" className="CONTACT-info-item">Zakiattri777@gmail.com</a>
+                                <a href="mailto: zakiattari777@gmail.com" className="CONTACT-info-item"> zakiattari777@gmail.com</a>
                             </p>
                             <p className="CONTACT-info-item">
                                 <FaRegCalendarDays className="CONTACT-white-icon" />
