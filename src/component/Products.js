@@ -18,49 +18,49 @@ import img10 from "./img10.jpg"
 const products = [
   {
     id: 1,
-    name: "JSW Vishwas GC Sheets",
+    name: "JSW galvenaiz roofing sheets",
     title: "STEEL",
     image: img1,
     description: "JSW Steel's tamper-proof, non-erasable marked colour coated sheets with superior durability and weather resistance.",
   },
   {
     id: 2,
-    name: "Mild Steel Plates",
+    name: "HR plates",
     title: "STEEL",
     image: img2,
     description: "High-quality flat sheets for fabrication and construction applications, available in various thicknesses and sizes.",
   },
   {
     id: 3,
-    name: "Mild Steel Round Bar",
+    name: "MS bright Bar",
     title: "STEEL",
     image: img3,
     description: "Versatile ferrous metal bars with excellent magnetic properties, ductility, and weldability for multiple applications.",
   },
   {
     id: 4,
-    name: "Mild Steel Flat Bar",
+    name: "MS flat Bar",
     title: "STEEL",
     image: img4,
     description: "Precision-engineered rectangular bars ideal for fabrication, construction, and general engineering purposes.",
   },
   {
     id: 5,
-    name: "Carbon Steel Square Pipe",
+    name: "MS pipes",
     title: "STEEL",
     image: img5,
     description: "Structural-grade hollow square pipes perfect for frames, supports, and various construction projects.",
   },
   {
     id: 6,
-    name: "Carbon Steel Channels",
+    name: "MS channel",
     title: "STEEL",
     image: img6,
     description: "U-shaped structural beams (C-channels) offering superior strength for construction and industrial use.",
   },
   {
     id: 7,
-    name: "MS Angle",
+    name: "MS angles",
     title: "STEEL",
     image: img7,
     description: "L-shaped structural sections providing excellent bracing and support in construction and fabrication.",
@@ -85,88 +85,32 @@ const products = [
 
   {
     id: 10,
-    name: "Color-Coated Roofing Sheets",
+    name: "Color-Coated Sheets",
     title: "STEEL",
     image: img10,
     description: "Durable steel sheets with protective zinc coating and decorative finish for long-lasting roofing solutions.",
   },
 
 
-
   {
-    id: 1,
-    name: "JSW Vishwas GC Sheets",
-    title: "STEEL",
-    image: img1,
-    description: "JSW Steel's tamper-proof, non-erasable marked colour coated sheets with superior durability and weather resistance.",
-  },
-  {
-    id: 2,
-    name: "Mild Steel Plates",
+    id: 11,
+    name: "HR plates",
     title: "STEEL",
     image: img2,
     description: "High-quality flat sheets for fabrication and construction applications, available in various thicknesses and sizes.",
   },
+
+
   {
-    id: 3,
-    name: "Mild Steel Round Bar",
-    title: "STEEL",
-    image: img3,
-    description: "Versatile ferrous metal bars with excellent magnetic properties, ductility, and weldability for multiple applications.",
-  },
-  {
-    id: 4,
-    name: "Mild Steel Flat Bar",
-    title: "STEEL",
-    image: img4,
-    description: "Precision-engineered rectangular bars ideal for fabrication, construction, and general engineering purposes.",
-  },
-  {
-    id: 5,
-    name: "Carbon Steel Square Pipe",
+    id: 12,
+    name: "MS pipes",
     title: "STEEL",
     image: img5,
     description: "Structural-grade hollow square pipes perfect for frames, supports, and various construction projects.",
-  },
-  {
-    id: 6,
-    name: "Carbon Steel Channels",
-    title: "STEEL",
-    image: img6,
-    description: "U-shaped structural beams (C-channels) offering superior strength for construction and industrial use.",
-  },
-  {
-    id: 7,
-    name: "MS Angle",
-    title: "STEEL",
-    image: img7,
-    description: "L-shaped structural sections providing excellent bracing and support in construction and fabrication.",
-  },
-  {
-    id: 8,
-    name: "Color-Coated Roofing Sheets",
-    title: "STEEL",
-    image: img8,
-    description: "Durable steel sheets with protective zinc coating and decorative finish for long-lasting roofing solutions.",
-  },
+  }
+  
 
 
-  {
-    id: 9,
-    name: "Cement roofing sheets",
-    title: "CEMENT",
-    image: img9,
-    description: "Strong and durable cement roofing sheets ideal for all-weather protection, offering reliable coverage for residential, commercial, and industrial buildings.",
-  },
-
-
-  {
-    id: 10,
-    name: "Color-Coated Roofing Sheets",
-    title: "STEEL",
-    image: img10,
-    description: "Durable steel sheets with protective zinc coating and decorative finish for long-lasting roofing solutions.",
-  },
 
 
 
