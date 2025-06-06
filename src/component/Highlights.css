@@ -1,5 +1,3 @@
-/* Highlights.css */
-
 .highlights-section {
   background-color: #111111;
   padding: 80px 0;
@@ -47,6 +45,9 @@
   overflow: hidden;
   transition: all 0.3s ease;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .highlight-card:hover {
@@ -72,6 +73,9 @@
 
 .highlight-content {
   padding: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .highlight-title {
@@ -108,6 +112,195 @@
   transition: all 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 1px;
+  margin-top: auto;
+  align-self: flex-start;
+}
+
+.highlight-btn:hover {
+  background-color: #e0411a;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(255, 78, 29, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .highlight-heading {
+    font-size: 2.2rem;
+  }
+  
+  .highlights-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .highlights-section {
+    padding: 60px 0;
+  }
+  
+  .highlight-heading {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .highlight-heading {
+    font-size: 1.8rem;
+  }
+  
+  .highlight-card {
+    margin-bottom: 30px;
+  }
+  
+  .highlight-image-container {
+    height: 180px;
+  }
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.highlight-card {
+  opacity: 0;
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+.highlight-card:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.highlight-card:nth-child(2) {
+  animation-delay: 0.4s;
+}
+
+.highlight-card:nth-child(3) {
+  animation-delay: 0.6s;
+}.highlights-section {
+  background-color: #111111;
+  padding: 80px 0;
+  color: #ffffff;
+}
+
+.highlights-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.highlight-heading {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.highlight-heading span {
+  color: #ff4e1d;
+}
+
+.highlight-heading::after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #ff4e1d;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.highlight-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.highlight-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(255, 78, 29, 0.2);
+}
+
+.highlight-image-container {
+  overflow: hidden;
+  height: 200px;
+}
+
+.highlight-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.highlight-card:hover .highlight-image {
+  transform: scale(1.1);
+}
+
+.highlight-content {
+  padding: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.highlight-title {
+  color: #ff4e1d;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.highlight-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #ff4e1d;
+}
+
+.highlight-description {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.highlight-btn {
+  background-color: #ff4e1d;
+  color: #ffffff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: auto;
+  align-self: flex-start;
 }
 
 .highlight-btn:hover {
