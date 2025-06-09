@@ -30,6 +30,9 @@ const Highlights = () => {
         <div className="highlights-grid">
           {highlightsData.map((item, index) => (
             <div className="highlight-card" key={index}>
+
+
+              
               <div className="highlight-image-container">
                 <img src={item.image} alt={item.title} className="highlight-image" />
               </div>

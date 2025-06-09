@@ -1,14 +1,13 @@
 /* Footer.css */
 .admin-footer {
-  background-color: #1c1c1cdc;
-  color: #fff;
+  background-color: #fff; /* Changed to white */
+  color: #000000; /* Changed text color to black */
   padding: 40px 30px 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* Lighter shadow */
   position: relative;
   z-index: 100;
-  border-top: 5px solid #fffbfbab;
-  /* border-radius: 0px 50px 0 0px; */
+  border-top: 5px solid #f0f0f0; /* Lighter border */
 }
 
 .footer-content {
@@ -36,19 +35,19 @@
   width: 100px;
   object-fit: contain;
   border-radius: 18px;
-  box-shadow: 0 0 5px rgba(255, 78, 29, 0.5);
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.3); /* Blue shadow instead of orange */
 }
 
 .footer-logo-contain h3 {
   font-size: 24px;
   font-weight: 700;
-  color: #ff4e1d;
+  color: #3b82f6; /* Blue color for title */
   letter-spacing: 1px;
   margin: 0;
 }
 
 .footer-logo-contain p {
-  color: #cccccc;
+  color: #555555; /* Darker gray for better contrast on white */
   font-size: 14px;
   line-height: 1.6;
   margin: 0;
@@ -61,7 +60,7 @@
 .footer-links h4, 
 .footer-contact h4 {
   font-size: 18px;
-  color: #ff4e1d;
+  color: #3b82f6; /* Blue color for headings */
   margin-bottom: 20px;
   position: relative;
   padding-bottom: 8px;
@@ -75,7 +74,7 @@
   bottom: 0;
   width: 50px;
   height: 2px;
-  background-color: #ff4e1d;
+  background-color: #3b82f6; /* Blue underline */
 }
 
 .footer-links ul {
@@ -89,7 +88,7 @@
 }
 
 .footer-links a {
-  color: #cccccc;
+  color: #555555; /* Dark gray for links */
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s ease;
@@ -98,7 +97,7 @@
 }
 
 .footer-links a:hover {
-  color: #ff4e1d;
+  color: #3b82f6; /* Blue on hover */
 }
 
 .footer-contact {
@@ -106,33 +105,49 @@
 }
 
 .footer-contact p {
-  color: #cccccc;
+  color: #555555; /* Dark gray for text */
   font-size: 14px;
   margin-bottom: 15px;
   line-height: 1.6;
 }
 
 .footer-contact a {
-  color: #cccccc;
+  color: #555555; /* Dark gray for links */
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .footer-contact a:hover {
-  color: #ff4e1d;
+  color: #3b82f6; /* Blue on hover */
 }
 
 .footer-bottom {
   text-align: center;
   margin-top: 40px;
   padding-top: 20px;
-  border-top: 1px solid rgba(255, 78, 29, 0.2);
+  border-top: 1px solid rgba(59, 130, 246, 0.2); /* Light blue border */
 }
 
 .footer-bottom p {
-  color: #cccccc;
+  color: #777777; /* Medium gray for copyright text */
   font-size: 12px;
   margin: 0;
+}
+
+/* Button styles */
+.footer-btn {
+  background-color: #3b82f6; /* Blue background */
+  color: #ffffff; /* White text */
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.footer-btn:hover {
+  background-color: #2563eb; /* Darker blue on hover */
 }
 
 @media screen and (max-width: 768px) {

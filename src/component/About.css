@@ -2,22 +2,20 @@
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 0;
   margin: 0;
-  background-color: #f7f7f7;
-  color: #333;
+  background-color: #fff; /* Changed to white */
+  color: #000000; /* Changed to black for titles */
 }
 
 .about-hero {
-  background: linear-gradient(
-    135deg,
-    #ff4e1d,
-    #ff7a50
-  ); /* gradient background */
+  background: linear-gradient(135deg,
+      #3b82f6, /* Changed to blue */
+      #3b82f6); /* Changed to blue */
   height: 280px;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: #ffff; /* Changed to white */
   padding: 0 20px;
 }
 
@@ -28,11 +26,13 @@
 .hero-text h1 {
   font-size: 36px;
   margin-bottom: 10px;
+  color: #ffff; /* Added white color for hero title */
 }
 
 .hero-text p {
   font-size: 18px;
   font-weight: 500;
+  color: #ffff; /* Added white color for hero text */
 }
 
 .about-content {
@@ -47,13 +47,14 @@
 
 .about-section h2,
 .about-section h3 {
-  color: #ff4e1d;
+  color: #000000; /* Changed to black */
   margin-bottom: 10px;
 }
 
 .about-section p {
   line-height: 1.6;
   font-size: 16px;
+  color: #333; /* Dark gray for better readability on white */
 }
 
 .mission-vision {
@@ -66,7 +67,7 @@
   flex: 1;
   background: #fff;
   padding: 20px;
-  border-left: 5px solid #ff4e1d;
+  border-left: 5px solid #3b82f6; /* Changed to blue */
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 }
@@ -80,7 +81,7 @@
   background: white;
   margin-bottom: 12px;
   padding: 14px 18px;
-  border-left: 4px solid #ff4e1d;
+  border-left: 4px solid #3b82f6; /* Changed to blue */
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   font-weight: 500;
@@ -91,7 +92,7 @@
 }
 
 .icon {
-  color: #ff4e1d;
+  color: #3b82f6; /* Changed to blue */
   font-size: 20px;
 }
 
@@ -100,21 +101,21 @@
 }
 
 .contact-btn {
-  background-color: #ff4e1d;
-  color: white;
+  background-color: #3b82f6; /* Changed to blue */
+  color: #ffff; /* Changed to white */
   padding: 12px 25px;
   border: none;
   border-radius: 25px;
   text-decoration: none;
   font-weight: bold;
   transition: background 0.3s ease;
-
   display: inline-block;
 }
 
 .contact-btn:hover {
-  background-color: #e03e0e;
+  background-color: #2563eb; /* Darker blue for hover */
 }
+
 .values-list {
   list-style: none;
   padding: 0;
@@ -127,11 +128,12 @@
   background: #fff;
   margin: 10px 0;
   padding: 12px 18px;
-  border-left: 4px solid #ff4e1d;
+  border-left: 4px solid #3b82f6; /* Changed to blue */
   border-radius: 5px;
   font-weight: 500;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.04);
 }
+
 .quick-facts {
   margin-bottom: 40px;
 }
@@ -148,7 +150,7 @@
   flex: 1 1 200px;
   max-width: 220px;
   padding: 20px;
-  border-left: 5px solid #ff4e1d;
+  border-left: 5px solid #3b82f6; /* Changed to blue */
   border-radius: 8px;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
   text-align: center;
@@ -156,73 +158,19 @@
 
 .fact-box h3 {
   margin: 10px 0 5px 0;
-  color: #ff4e1d;
-}
-
-.choose-us ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-.choose-us li {
-  background: white;
-  margin-bottom: 12px;
-  padding: 14px 18px;
-  border-left: 4px solid #ff4e1d;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  font-weight: 500;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  font-size: 16px;
+  color: #3b82f6; /* Changed to blue */
 }
 
 .sustainability {
-  background: #fff3e0;
+  background: #f0f7ff; /* Light blue background */
   padding: 20px;
-  border-left: 5px solid #ff4e1d;
+  border-left: 5px solid #3b82f6; /* Changed to blue */
   border-radius: 8px;
   margin-bottom: 40px;
   font-style: italic;
-  color: #6d4c41;
+  color: #1e3a8a; /* Dark blue text */
 }
 
-.about-container {
-  background-color: #111111;
-  color: #f0f0f0; /* light text for readability */
-}
-
-/* Headings color thoda bright karen */
-.about-section h2,
-.about-section h3 {
-  color: #ff7a50; /* thoda lighter orange */
-}
-
-/* Paragraphs */
-.about-section p {
-  color: #ddd;
-}
-
-/* Links and buttons */
-.contact-btn {
-  background-color: #ff4e1d;
-  color: white;
-}
-
-.contact-btn:hover {
-  background-color: #e03e0e;
-}
-.mission-vision div,
-.choose-us li,
-.values-list li,
-.fact-box,
-.sustainability {
-  background: #222222;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.05);
-  color: #ddd;
-  border-left-color: #ff7a50;
-}
 
 /* for texteing */
 @media (max-width: 992px) {

@@ -2,7 +2,7 @@
 
 .Po {
   width: 100%;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .Po-container {
@@ -10,16 +10,15 @@
   margin: 0 auto;
   padding: 30px 20px;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #ffffff;
+  color: #000000;
   min-height: 100vh;
-  border-top: 2px solid #c0392b;
-  /* border-radius: 10px 18px ; */
+  border-top: 2px solid #3b82f6;
   padding-top: 10px;
-  background-color: #000;
+  background-color: #fff;
 }
 
 .Po-title {
-  color: #ff4e1d;
+  color: #000000;
   font-size: 2.5rem;
   text-align: center;
   margin-bottom: 40px;
@@ -38,17 +37,17 @@
   transform: translateX(-50%);
   width: 100px;
   height: 3px;
-  background-color: #ff4e1d;
+  background-color: #3b82f6;
   border-radius: 3px;
 }
 
 .Po-section {
   margin-bottom: 50px;
-  background-color: rgba(30, 30, 30, 0.8);
+  background-color: rgba(245, 245, 245, 0.8);
   border-radius: 10px;
   padding: 25px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  border: 1px solid rgba(255, 78, 29, 0.2);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.2);
   animation: fadeIn 0.6s ease-out forwards;
   opacity: 0;
 }
@@ -62,11 +61,11 @@
 }
 
 .Po-subtitle {
-  color: #ff4e1d;
+  color: #3b82f6;
   font-size: 1.8rem;
   margin-bottom: 25px;
   padding-bottom: 10px;
-  border-bottom: 2px solid rgba(255, 78, 29, 0.5);
+  border-bottom: 2px solid rgba(59, 130, 246, 0.5);
   display: inline-block;
 }
 
@@ -79,12 +78,12 @@
 .Po-productCard {
   display: flex;
   flex-direction: column;
-  background-color: rgba(40, 40, 40, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 78, 29, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(59, 130, 246, 0.1);
   animation: zoomIn 0.5s ease-out forwards;
   opacity: 0;
   transform: scale(0.95);
@@ -109,8 +108,8 @@
 
 .Po-productCard:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 12px 24px rgba(255, 78, 29, 0.15);
-  border-color: rgba(255, 78, 29, 0.3);
+  box-shadow: 0 12px 24px rgba(59, 130, 246, 0.15);
+  border-color: rgba(59, 130, 246, 0.3);
 }
 
 .Po-productImage {
@@ -132,14 +131,14 @@
 }
 
 .Po-productName {
-  color: #ffffff;
+  color: #000000;
   font-size: 1.5rem;
   margin-bottom: 10px;
   font-weight: 600;
 }
 
 .Po-productDesc {
-  color: #cccccc;
+  color: #555555;
   margin-bottom: 15px;
   font-size: 1rem;
   line-height: 1.5;
@@ -147,7 +146,7 @@
 }
 
 .Po-productPrice {
-  color: #ff4e1d;
+  color: #3b82f6;
   font-size: 1.3rem;
   font-weight: 700;
   margin-bottom: 20px;
@@ -162,7 +161,7 @@
 }
 
 .Po-enquireBtn {
-  background-color: #ff4e1d;
+  background-color: #3b82f6;
   color: #ffffff;
   border: none;
   padding: 12px 25px;
@@ -171,16 +170,16 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-  box-shadow: 0 4px 8px rgba(255, 78, 29, 0.3);
+  box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
   text-transform: uppercase;
   letter-spacing: 0.5px;
   align-self: flex-start;
 }
 
 .Po-enquireBtn:hover {
-  background-color: #e0451a;
+  background-color: #2563eb;
   transform: translateY(-2px);
-  box-shadow: 0 6px 12px rgba(255, 78, 29, 0.4);
+  box-shadow: 0 6px 12px rgba(59, 130, 246, 0.4);
 }
 
 .Po-enquireBtn:active {
@@ -188,7 +187,7 @@
 }
 
 .Po-toggleBtn {
-  background-color: #007bff;
+  background-color: #3b82f6;
   color: white;
   padding: 10px 20px;
   border: none;
@@ -199,7 +198,7 @@
 }
 
 .Po-toggleBtn:hover {
-  background-color: #0056b3;
+  background-color: #2563eb;
 }
 
 /* Animations */
@@ -208,7 +207,6 @@
     opacity: 0;
     transform: translateY(-30px);
   }
-
   to {
     opacity: 1;
     transform: translateY(0);
@@ -219,7 +217,6 @@
   from {
     opacity: 0;
   }
-
   to {
     opacity: 1;
   }
@@ -230,7 +227,6 @@
     opacity: 0;
     transform: scale(0.95);
   }
-
   to {
     opacity: 1;
     transform: scale(1);
@@ -248,19 +244,16 @@
   .Po-container {
     padding: 20px 15px;
   }
-
   .Po-title {
     font-size: 2rem;
+  color: #000000;
   }
-
   .Po-section {
     padding: 20px;
   }
-
   .Po-productsGrid {
     grid-template-columns: 1fr;
   }
-
   .Po-productCard {
     max-width: 100%;
   }
@@ -270,24 +263,21 @@
   .Po-title {
     font-size: 1.8rem;
     padding-bottom: 10px;
+    color: #000000;
   }
-
   .Po-title::after {
     width: 80px;
   }
-
   .Po-subtitle {
     font-size: 1.5rem;
   }
-
   .Po-productName {
     font-size: 1.3rem;
+    color: #000000;
   }
-
   .Po-productPrice {
     font-size: 1.2rem;
   }
-
   .Po-enquireBtn {
     padding: 10px 20px;
     font-size: 0.9rem;
