@@ -73,7 +73,7 @@ const Navbar = () => {
             onClick={closeMenu}
             aria-label="Close menu"
           >
-            <FaTimes size={24} color="#fff" />
+            <FaTimes size={24} color="#3b82f6" />
           </button>
           <ul>
             {navItems.map((item) => (

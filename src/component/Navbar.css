@@ -1,6 +1,8 @@
 .navbar {
-  background-color: #ffffff; /* Changed from #111111 to #fff */
-  color: #000000; /* Changed from #fff to #00000 */
+  background-color: #ffffff;
+  /* Changed from #111111 to #fff */
+  color: #000000;
+  /* Changed from #fff to #00000 */
   padding: 15px 30px;
   display: flex;
   justify-content: space-between;
@@ -26,7 +28,8 @@ a {
   width: auto;
   object-fit: contain;
   border-radius: 8px;
-  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5); /* Changed from rgba(255, 78, 29, 0.5) */
+  box-shadow: 0 0 5px rgba(59, 130, 246, 0.5);
+  /* Changed from rgba(255, 78, 29, 0.5) */
 }
 
 .navbar-brand {
@@ -38,13 +41,15 @@ a {
 .navbar-brand strong {
   font-size: 24px;
   font-weight: 700;
-  color: #3b82f6; /* Changed from #ff4e1d to #3b82f6 */
+  color: #3b82f6;
+  /* Changed from #ff4e1d to #3b82f6 */
   letter-spacing: 1px;
 }
 
 .navbar-brand span {
   font-size: 14px;
-  color: #666666; /* Changed from #cccccc to darker gray */
+  color: #666666;
+  /* Changed from #cccccc to darker gray */
   font-weight: 400;
 }
 
@@ -64,7 +69,8 @@ a {
   display: inline-flex;
   align-items: center;
   padding: 8px 14px;
-  color: #3b82f6; /* Changed from #ff4e1d to #3b82f6 */
+  color: #3b82f6;
+  /* Changed from #ff4e1d to #3b82f6 */
   text-decoration: none;
   font-weight: 500;
   border-radius: 6px;
@@ -78,15 +84,21 @@ a {
 }
 
 .navbar-links a:hover {
-  background-color: rgba(59, 130, 246, 0.1); /* Changed from rgba(255, 78, 29, 0.1) */
-  border-color: #3b82f6; /* Changed from #ff4e1d */
-  color: #000000; /* Changed from #ffffff to #000000 */
+  background-color: rgba(59, 130, 246, 0.1);
+  /* Changed from rgba(255, 78, 29, 0.1) */
+  border-color: #3b82f6;
+  /* Changed from #ff4e1d */
+  color: #000000;
+  /* Changed from #ffffff to #000000 */
 }
 
 .navbar-links a.active {
-  background-color: #3b82f6; /* Changed from #ff4e1d */
-  color: #ffffff !important; /* Kept #fff */
-  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.5); /* Changed from rgba(255, 78, 29, 0.5) */
+  background-color: #3b82f6;
+  /* Changed from #ff4e1d */
+  color: #ffffff !important;
+  /* Kept #fff */
+  box-shadow: 0 2px 8px rgba(59, 130, 246, 0.5);
+  /* Changed from rgba(255, 78, 29, 0.5) */
 }
 
 /* Hamburger button */
@@ -105,7 +117,8 @@ a {
   top: 20px;
   right: 15px;
   background: none;
-  color: #3b82f6; /* Changed from #ff4e1d */
+  color: #3b82f6;
+  /* Changed from #ff4e1d */
   font-size: 28px;
   border: none;
   cursor: pointer;
@@ -124,7 +137,8 @@ a {
     width: 70%;
     max-width: 300px;
     height: 100vh;
-    background-color: #ffffff; /* Changed from #111111 to #fff */
+    background-color: #ffffff;
+    /* Changed from #111111 to #fff */
     flex-direction: column;
     padding: 80px 20px 20px;
     box-shadow: -4px 0 12px rgba(0, 0, 0, 0.5);
@@ -150,21 +164,27 @@ a {
     display: flex;
     align-items: center;
     font-size: 18px;
-    color: #3b82f6; /* Changed from #ff4e1d */
+    color: #3b82f6;
+    /* Changed from #ff4e1d */
     border-radius: 6px;
     transition: all 0.3s ease;
     margin: 5px 0;
   }
 
-  .navbar-links a:hover {
-    background-color: rgba(59, 130, 246, 0.1); /* Changed from rgba(255, 78, 29, 0.1) */
-    color: #000000; /* Changed from #fff */
+  z .navbar-links a:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+    /* Changed from rgba(255, 78, 29, 0.1) */
+    color: #000000;
+    /* Changed from #fff */
   }
 
   .navbar-links a.active {
-    background-color: #3b82f6; /* Changed from #ff4e1d */
-    color: #ffffff !important; /* Kept white */
-    border-left: 4px solid #ffffff; /* Kept white */
+    background-color: #3b82f6;
+    /* Changed from #ff4e1d */
+    color: #ffffff !important;
+    /* Kept white */
+    border-left: 4px solid #ffffff;
+    /* Kept white */
   }
 
   /* Show close button inside menu */
