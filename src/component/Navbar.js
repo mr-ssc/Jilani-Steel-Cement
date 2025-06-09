@@ -102,9 +102,9 @@ const Navbar = () => {
           aria-controls="navbar-links"
         >
           {menuOpen ? (
-            <FaTimes size={26} color="#ff4e1d" />
+            <FaTimes size={26} color="#3b82f6" />
           ) : (
-            <GiHamburgerMenu size={26} color="#ff4e1d" />
+            <GiHamburgerMenu size={26} color="#3b82f6" />
           )}
         </button>
       </nav>
